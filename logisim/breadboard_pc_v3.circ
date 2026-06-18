@@ -451,30 +451,32 @@ f6 cf d7 10*df 4f f5 4f f6
 f6 12*df 4f f5 4f f6 12*df 4f
 f5 4f f6 12*df 4f f5 4f f6
 12*df 4f f5 4f f6 12*df 4f f5
-4f f6 12*df 3552*0 4f f5 4f f6
-12*df 4f f5 4f f6 cf d7 10*df
-4f f5 4f f6 cf d7 10*df 4f
-f5 4f f6 12*df 4f f5 4f f6
+4f f6 12*df 4f f5 4f f6 12*df
+3536*0 4f f5 4f f6 12*df 4f f5
+4f f6 cf d7 10*df 4f f5 4f
+f6 cf d7 10*df 4f f5 4f f6
 12*df 4f f5 4f f6 12*df 4f f5
 4f f6 12*df 4f f5 4f f6 12*df
+4f f5 4f f6 12*df 4f f5 4f
+f6 9f 11*df 4f f5 4f f6 12*df
+4f f5 4f f6 12*df 4f f5 4f
+f6 12*df 4f f5 4f f6 cf db
+10*df 4f f5 4f f6 cf db 10*df
+4f f5 4f f6 12*df 4f f5 4f
+f6 12*df 4f f5 4f f6 9f 11*df
 4f f5 4f f6 9f 11*df 4f f5
+4f f6 9f 11*df 4f f5 4f f6
+9f 11*df 4f f5 4f f6 12*df 4f
+f5 4f f6 12*df 4f f5 4f f6
+12*df 4f f5 4f f6 12*df 4f f5
+4f f6 cf d7 10*df 4f f5 4f
+f6 12*df 4f f5 4f f6 cf db
+10*df 4f f5 4f f6 12*df 4f f5
 4f f6 12*df 4f f5 4f f6 12*df
 4f f5 4f f6 12*df 4f f5 4f
-f6 cf db 10*df 4f f5 4f f6
-cf db 10*df 4f f5 4f f6 12*df
-4f f5 4f f6 12*df 4f f5 4f
-f6 9f 11*df 4f f5 4f f6 9f
-11*df 4f f5 4f f6 9f 11*df 4f
-f5 4f f6 9f 11*df 4f f5 4f
 f6 12*df 4f f5 4f f6 12*df 4f
 f5 4f f6 12*df 4f f5 4f f6
-12*df 4f f5 4f f6 cf d7 10*df
-4f f5 4f f6 12*df 4f f5 4f
-f6 cf db 10*df 4f f5 4f f6
-12*df 4f f5 4f f6 12*df 4f f5
-4f f6 12*df 4f f5 4f f6 12*df
-4f f5 4f f6 12*df 4f f5 4f
-f6 12*df 4f f5 4f f6 12*df
+12*df
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM4"/>
       <a name="labelvisible" val="true"/>
@@ -490,15 +492,16 @@ f6 12*df 4f f5 4f f6 12*df
 b8 78*f8 78 15*f8 78 15*f8 78 15*f8
 78 15*f8 78 15*f8 78 15*f8 78 31*f8
 c8 15*f8 d8 15*f8 b0 15*f8 f0 15*f8
-b8 15*f8 e8 11*f8 3552*0 20*f8 78 b8
-14*f8 78 e8 14*f8 b8 15*f8 b9 15*f8
-38 15*f8 68 15*f8 d8 15*f8 78 15*f8
-ba 15*f8 be 15*f8 bc 15*f8 78 d8
-14*f8 78 f0 30*f8 68 b8 14*f8 78
-15*f8 78 15*f8 78 15*f8 78 79*f8 78
-15*f8 78 15*f8 78 31*f8 c8 15*f8 d8
-15*f8 b0 15*f8 f0 15*f8 b8 15*f8 e8
-11*f8
+b8 15*f8 e8 15*f8 b8 68 f9 9*f8
+3536*0 20*f8 78 b8 14*f8 78 e8 14*f8
+b8 15*f8 b9 15*f8 38 15*f8 68 15*f8
+d8 15*f8 78 15*f8 ba 15*f8 be 15*f8
+bc 15*f8 78 d8 14*f8 78 f0 30*f8
+68 b8 14*f8 78 15*f8 78 15*f8 78
+15*f8 78 79*f8 78 15*f8 78 15*f8 78
+31*f8 c8 15*f8 d8 15*f8 b0 15*f8 f0
+15*f8 b8 15*f8 e8 15*f8 b8 68 f9
+9*f8
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM3"/>
       <a name="labelvisible" val="true"/>
@@ -519,20 +522,21 @@ ae 11*9e 4*8e ae 11*9e 4*8e ae 11*9e
 aa 10*9e 4*8e aa 11*9e 5*8e ac 10*9e
 4*8e af 11*9e 4*8e ae 11*9e 4*8e aa
 11*9e 4*8e ae 11*9e 4*8e aa 11*9e 4*8e
-ac 11*9e 4*8e ac 11*9e 3552*0 4*8e ae
-11*9e 5*8e ae 10*9e 5*8e ae 10*9e 4*8e
-26 11*9e 4*8e 26 11*9e 4*8e ae 11*9e
-4*8e ae 11*9e 4*8e ee 11*9e 4*8e ae
-11*9e 4*8e 26 11*9e 4*8e 26 11*9e 4*8e
-26 11*9e 5*8e ae 10*9e 5*8e ae 10*9e
-4*8e 12*9e 5*8e 26 10*9e 4*8e ae 11*9e
+ac 11*9e 4*8e ac 11*9e 4*8e 8c 8e
+2a 9*9e 3536*0 4*8e ae 11*9e 5*8e ae
+10*9e 5*8e ae 10*9e 4*8e 26 11*9e 4*8e
+26 11*9e 4*8e ae 11*9e 4*8e ae 11*9e
+4*8e ee 11*9e 4*8e ae 11*9e 4*8e 26
+11*9e 4*8e 26 11*9e 4*8e 26 11*9e 5*8e
+ae 10*9e 5*8e ae 10*9e 4*8e 12*9e 5*8e
+26 10*9e 4*8e ae 11*9e 4*8e ae 11*9e
 4*8e ae 11*9e 4*8e ae 11*9e 4*8e ae
 11*9e 4*8e ae 11*9e 4*8e ae 11*9e 4*8e
-ae 11*9e 4*8e ae 11*9e 5*8e aa 10*9e
-4*8e aa 11*9e 5*8e ac 10*9e 4*8e af
-11*9e 4*8e ae 11*9e 4*8e aa 11*9e 4*8e
-ae 11*9e 4*8e aa 11*9e 4*8e ac 11*9e
-4*8e ac 11*9e
+ae 11*9e 5*8e aa 10*9e 4*8e aa 11*9e
+5*8e ac 10*9e 4*8e af 11*9e 4*8e ae
+11*9e 4*8e aa 11*9e 4*8e ae 11*9e 4*8e
+aa 11*9e 4*8e ac 11*9e 4*8e ac 11*9e
+4*8e 8c 8e 2a 9*9e
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM2"/>
       <a name="labelvisible" val="true"/>
