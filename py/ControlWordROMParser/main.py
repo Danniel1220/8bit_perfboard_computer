@@ -127,7 +127,7 @@ write_hex_file("rom3_microcode_control_words.hex", rom3image)
 write_hex_file("rom2_microcode_control_words.hex", rom2image)
 write_hex_file("rom1_microcode_control_words.hex", rom1image)
 
-total_microcode_words = len(rom1image)
+total_microcode_words = len(matrix)
 total_instructions = total_microcode_words // 16
 
 print("total microcode words:", total_microcode_words)

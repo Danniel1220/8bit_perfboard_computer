@@ -235,6 +235,18 @@
     <comp lib="0" loc="(5040,2010)" name="Ground">
       <a name="facing" val="west"/>
     </comp>
+    <comp lib="0" loc="(5060,3030)" name="Splitter">
+      <a name="bit0" val="7"/>
+      <a name="bit1" val="6"/>
+      <a name="bit2" val="5"/>
+      <a name="bit3" val="4"/>
+      <a name="bit4" val="3"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="0"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
     <comp lib="0" loc="(5300,1290)" name="Splitter">
       <a name="bit0" val="7"/>
       <a name="bit1" val="6"/>
@@ -432,7 +444,10 @@ f5 4f f6 12*df 4f f5 4f f6
 4f f5 4f f6 12*df 4f f5 4f
 f6 9f 11*df 4f f5 4f f6 9f
 11*df 4f f5 4f f6 9f 11*df 4f
-f5 4f f6 9f 11*df 3712*0 4f f5
+f5 4f f6 9f 11*df 4f f5 4f
+f6 cf d7 10*df 4f f5 4f f6
+12*df 4f f5 4f f6 cf db 10*df
+4f f5 4f f6 12*df 3648*0 4f f5
 4f f6 12*df 4f f5 4f f6 cf
 d7 10*df 4f f5 4f f6 cf d7
 10*df 4f f5 4f f6 12*df 4f f5
@@ -449,6 +464,9 @@ f6 9f 11*df 4f f5 4f f6 9f
 11*df 4f f5 4f f6 9f 11*df 4f
 f5 4f f6 12*df 4f f5 4f f6
 12*df 4f f5 4f f6 12*df 4f f5
+4f f6 12*df 4f f5 4f f6 cf
+d7 10*df 4f f5 4f f6 12*df 4f
+f5 4f f6 cf db 10*df 4f f5
 4f f6 12*df
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM4"/>
@@ -463,12 +481,14 @@ f5 4f f6 12*df 4f f5 4f f6
 15*f8 78 15*f8 ba 15*f8 be 15*f8 bc
 15*f8 78 d8 14*f8 78 f0 30*f8 68
 b8 78*f8 78 15*f8 78 15*f8 78 15*f8
-78 11*f8 3712*0 20*f8 78 b8 14*f8 78
-e8 14*f8 b8 15*f8 b9 15*f8 38 15*f8
-68 15*f8 d8 15*f8 78 15*f8 ba 15*f8
-be 15*f8 bc 15*f8 78 d8 14*f8 78
-f0 30*f8 68 b8 14*f8 78 15*f8 78
-15*f8 78 15*f8 78 75*f8
+78 15*f8 78 15*f8 78 15*f8 78 27*f8
+3648*0 20*f8 78 b8 14*f8 78 e8 14*f8
+b8 15*f8 b9 15*f8 38 15*f8 68 15*f8
+d8 15*f8 78 15*f8 ba 15*f8 be 15*f8
+bc 15*f8 78 d8 14*f8 78 f0 30*f8
+68 b8 14*f8 78 15*f8 78 15*f8 78
+15*f8 78 79*f8 78 15*f8 78 15*f8 78
+27*f8
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM3"/>
       <a name="labelvisible" val="true"/>
@@ -477,24 +497,27 @@ f0 30*f8 68 b8 14*f8 78 15*f8 78
       <a name="addrWidth" val="15"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 15 8
-4*88 a8 11*98 5*88 a8 10*98 5*88 a8
-10*98 4*88 20 11*98 4*88 20 11*98 4*88
-a8 11*98 4*88 a8 11*98 4*88 e8 11*98
-4*88 a8 11*98 4*88 20 11*98 4*88 20
-11*98 4*88 20 11*98 5*88 a8 10*98 5*88
-a8 10*98 4*88 12*98 5*88 20 10*98 4*88
-a8 11*98 4*88 a8 11*98 4*88 a8 11*98
-4*88 a8 11*98 4*88 a8 11*98 4*88 a8
-11*98 4*88 a8 11*98 4*88 a8 11*98 3712*0
-4*88 a8 11*98 5*88 a8 10*98 5*88 a8
-10*98 4*88 20 11*98 4*88 20 11*98 4*88
-a8 11*98 4*88 a8 11*98 4*88 e8 11*98
-4*88 a8 11*98 4*88 20 11*98 4*88 20
-11*98 4*88 20 11*98 5*88 a8 10*98 5*88
-a8 10*98 4*88 12*98 5*88 20 10*98 4*88
-a8 11*98 4*88 a8 11*98 4*88 a8 11*98
-4*88 a8 11*98 4*88 a8 11*98 4*88 a8
-11*98 4*88 a8 11*98 4*88 a8 11*98
+4*8e ae 11*9e 5*8e ae 10*9e 5*8e ae
+10*9e 4*8e 26 11*9e 4*8e 26 11*9e 4*8e
+ae 11*9e 4*8e ae 11*9e 4*8e ee 11*9e
+4*8e ae 11*9e 4*8e 26 11*9e 4*8e 26
+11*9e 4*8e 26 11*9e 5*8e ae 10*9e 5*8e
+ae 10*9e 4*8e 12*9e 5*8e 26 10*9e 4*8e
+ae 11*9e 4*8e ae 11*9e 4*8e ae 11*9e
+4*8e ae 11*9e 4*8e ae 11*9e 4*8e ae
+11*9e 4*8e ae 11*9e 4*8e ae 11*9e 5*8e
+aa 10*9e 4*8e aa 11*9e 5*8e ac 10*9e
+4*8e af 11*9e 3648*0 4*8e ae 11*9e 5*8e
+ae 10*9e 5*8e ae 10*9e 4*8e 26 11*9e
+4*8e 26 11*9e 4*8e ae 11*9e 4*8e ae
+11*9e 4*8e ee 11*9e 4*8e ae 11*9e 4*8e
+26 11*9e 4*8e 26 11*9e 4*8e 26 11*9e
+5*8e ae 10*9e 5*8e ae 10*9e 4*8e 12*9e
+5*8e 26 10*9e 4*8e ae 11*9e 4*8e ae
+11*9e 4*8e ae 11*9e 4*8e ae 11*9e 4*8e
+ae 11*9e 4*8e ae 11*9e 4*8e ae 11*9e
+4*8e ae 11*9e 5*8e aa 10*9e 4*8e aa
+11*9e 5*8e ac 10*9e 4*8e af 11*9e
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM2"/>
       <a name="labelvisible" val="true"/>
@@ -507,9 +530,6 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
 </a>
       <a name="label" val="CONTROL_LOGIC_ROM1"/>
       <a name="labelvisible" val="true"/>
-    </comp>
-    <comp lib="5" loc="(4810,3670)" name="Counter">
-      <a name="appearance" val="logisim_evolution"/>
     </comp>
     <comp lib="5" loc="(5030,2100)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
@@ -625,6 +645,7 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <comp lib="6" loc="(4520,780)" name="DipSwitch">
       <a name="facing" val="south"/>
     </comp>
+    <comp lib="6" loc="(5100,2930)" name="LedBar"/>
     <comp lib="6" loc="(5340,1190)" name="LedBar"/>
     <comp lib="6" loc="(5340,1360)" name="LedBar"/>
     <comp lib="6" loc="(5400,2420)" name="LedBar"/>
@@ -699,6 +720,9 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <comp loc="(5000,2820)" name="counting_register_module">
       <a name="label" val="PROGRAM_COUNTER_REGISTER"/>
     </comp>
+    <comp loc="(5000,3030)" name="counting_register_module">
+      <a name="label" val="X_REGISTER"/>
+    </comp>
     <comp loc="(5250,2520)" name="register_module">
       <a name="label" val="OPERAND_REGISTER"/>
     </comp>
@@ -717,7 +741,6 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <comp loc="(5260,3220)" name="register_module">
       <a name="label" val="OUTPUT_REGISTER"/>
     </comp>
-    <comp loc="(5260,3740)" name="register_module"/>
     <wire from="(2040,4140)" to="(2040,4520)"/>
     <wire from="(2040,4140)" to="(2170,4140)"/>
     <wire from="(2040,4520)" to="(4190,4520)"/>
@@ -823,8 +846,14 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <wire from="(3400,1130)" to="(4140,1130)"/>
     <wire from="(3410,2300)" to="(3410,3980)"/>
     <wire from="(3410,2300)" to="(3880,2300)"/>
+    <wire from="(3420,3070)" to="(3420,3980)"/>
+    <wire from="(3420,3070)" to="(4780,3070)"/>
+    <wire from="(3430,3050)" to="(3430,3980)"/>
+    <wire from="(3430,3050)" to="(4780,3050)"/>
     <wire from="(3430,4070)" to="(3430,4300)"/>
     <wire from="(3430,4070)" to="(3440,4070)"/>
+    <wire from="(3440,3030)" to="(3440,3980)"/>
+    <wire from="(3440,3030)" to="(4780,3030)"/>
     <wire from="(3520,2420)" to="(3520,2490)"/>
     <wire from="(3520,2420)" to="(3800,2420)"/>
     <wire from="(3630,2430)" to="(3630,2490)"/>
@@ -899,8 +928,10 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <wire from="(4150,2410)" to="(4150,2600)"/>
     <wire from="(4150,2600)" to="(4150,2900)"/>
     <wire from="(4150,2600)" to="(5030,2600)"/>
-    <wire from="(4150,2900)" to="(4150,3300)"/>
+    <wire from="(4150,2900)" to="(4150,3110)"/>
     <wire from="(4150,2900)" to="(4780,2900)"/>
+    <wire from="(4150,3110)" to="(4150,3300)"/>
+    <wire from="(4150,3110)" to="(4780,3110)"/>
     <wire from="(4150,3300)" to="(5040,3300)"/>
     <wire from="(4160,1110)" to="(4160,1180)"/>
     <wire from="(4170,1330)" to="(4170,1420)"/>
@@ -925,8 +956,12 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <wire from="(4170,2560)" to="(5030,2560)"/>
     <wire from="(4170,2920)" to="(4170,2970)"/>
     <wire from="(4170,2920)" to="(4780,2920)"/>
-    <wire from="(4170,2970)" to="(4170,3260)"/>
+    <wire from="(4170,2970)" to="(4170,3130)"/>
     <wire from="(4170,2970)" to="(5010,2970)"/>
+    <wire from="(4170,3130)" to="(4170,3180)"/>
+    <wire from="(4170,3130)" to="(4780,3130)"/>
+    <wire from="(4170,3180)" to="(4170,3260)"/>
+    <wire from="(4170,3180)" to="(5000,3180)"/>
     <wire from="(4170,3260)" to="(4170,3310)"/>
     <wire from="(4170,3260)" to="(5040,3260)"/>
     <wire from="(4170,3310)" to="(4170,4810)"/>
@@ -942,8 +977,10 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <wire from="(4190,1950)" to="(5040,1950)"/>
     <wire from="(4190,2520)" to="(4190,2880)"/>
     <wire from="(4190,2520)" to="(5030,2520)"/>
-    <wire from="(4190,2880)" to="(4190,4520)"/>
+    <wire from="(4190,2880)" to="(4190,3090)"/>
     <wire from="(4190,2880)" to="(4780,2880)"/>
+    <wire from="(4190,3090)" to="(4190,4520)"/>
+    <wire from="(4190,3090)" to="(4780,3090)"/>
     <wire from="(4200,800)" to="(4220,800)"/>
     <wire from="(4200,810)" to="(4230,810)"/>
     <wire from="(4200,820)" to="(4240,820)"/>
@@ -1006,6 +1043,8 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <wire from="(5000,1800)" to="(5040,1800)"/>
     <wire from="(5000,2820)" to="(5250,2820)"/>
     <wire from="(5000,2840)" to="(5010,2840)"/>
+    <wire from="(5000,3030)" to="(5060,3030)"/>
+    <wire from="(5000,3050)" to="(5000,3180)"/>
     <wire from="(5000,3220)" to="(5000,3280)"/>
     <wire from="(5000,3220)" to="(5040,3220)"/>
     <wire from="(5000,3280)" to="(5040,3280)"/>
@@ -1015,6 +1054,22 @@ a8 11*98 4*88 a8 11*98 4*88 a8 11*98
     <wire from="(5010,2840)" to="(5010,2970)"/>
     <wire from="(5030,2080)" to="(5030,2110)"/>
     <wire from="(5030,2080)" to="(5300,2080)"/>
+    <wire from="(5080,2950)" to="(5100,2950)"/>
+    <wire from="(5080,2960)" to="(5110,2960)"/>
+    <wire from="(5080,2970)" to="(5120,2970)"/>
+    <wire from="(5080,2980)" to="(5130,2980)"/>
+    <wire from="(5080,2990)" to="(5140,2990)"/>
+    <wire from="(5080,3000)" to="(5150,3000)"/>
+    <wire from="(5080,3010)" to="(5160,3010)"/>
+    <wire from="(5080,3020)" to="(5170,3020)"/>
+    <wire from="(5100,2930)" to="(5100,2950)"/>
+    <wire from="(5110,2930)" to="(5110,2960)"/>
+    <wire from="(5120,2930)" to="(5120,2970)"/>
+    <wire from="(5130,2930)" to="(5130,2980)"/>
+    <wire from="(5140,2930)" to="(5140,2990)"/>
+    <wire from="(5150,2930)" to="(5150,3000)"/>
+    <wire from="(5160,2930)" to="(5160,3010)"/>
+    <wire from="(5170,2930)" to="(5170,3020)"/>
     <wire from="(5240,2540)" to="(5250,2540)"/>
     <wire from="(5250,2520)" to="(5360,2520)"/>
     <wire from="(5250,2540)" to="(5280,2540)"/>
