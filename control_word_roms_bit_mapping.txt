@@ -1,0 +1,45 @@
+ROM4
+
+7 - PC_OE_N 
+6 - PC_LOAD_N
+5 - PC_INCREMENT
+4 - MAR_IE_N
+3 - RAM_OE_N
+2 - RAM_WE_N
+1 - IR_IE_N
+0 - OPR_IE_N
+
+
+ROM3
+
+7 - OPR_OE_N
+6 - A_REG_IE_N
+5 - A_REG_OE_N
+4 - B_REG_IE_N
+3 - B_REG_OE_N
+2 - ALU_OP0
+1 - ALU_OP1
+0 - ALU_SUB
+
+ROM2
+
+7 - ALU_OE_N
+6 - OUT_IE
+5 - END
+4 - HALT
+3 - FLAGS_IE
+2 -
+1 -
+0 -
+
+ROM1
+
+7 - 
+6 - 
+5 - 
+4 - 
+3 - 
+2 -
+1 -
+0 -
+
