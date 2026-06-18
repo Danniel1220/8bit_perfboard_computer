@@ -1,7 +1,7 @@
 ROM4
 
 7 - PC_OE_N 
-6 - PC_LOAD_N
+6 - PC_IE_N
 5 - PC_INCREMENT
 4 - MAR_IE_N
 3 - RAM_OE_N
@@ -28,9 +28,9 @@ ROM2
 5 - END
 4 - HALT
 3 - FLAGS_IE
-2 -
-1 -
-0 -
+2 - X_REG_IE_N
+1 - X_REG_OE_N
+0 - X_REG_INC
 
 ROM1
 
