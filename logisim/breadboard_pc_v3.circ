@@ -247,6 +247,11 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
+    <comp lib="0" loc="(5100,3380)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
     <comp lib="0" loc="(5300,1290)" name="Splitter">
       <a name="bit0" val="7"/>
       <a name="bit1" val="6"/>
@@ -665,6 +670,13 @@ aa 11*9e 4*8e ac 11*9e 4*8e ac 11*9e
       <a name="facing" val="south"/>
     </comp>
     <comp lib="6" loc="(5100,2930)" name="LedBar"/>
+    <comp lib="6" loc="(5110,3520)" name="DotMatrix">
+      <a name="color" val="#ffffff"/>
+      <a name="matrixcols" val="8"/>
+      <a name="matrixrows" val="8"/>
+      <a name="offcolor" val="#000000"/>
+      <a name="selloc" val="tr"/>
+    </comp>
     <comp lib="6" loc="(5340,1190)" name="LedBar"/>
     <comp lib="6" loc="(5340,1360)" name="LedBar"/>
     <comp lib="6" loc="(5400,2420)" name="LedBar"/>
