@@ -40,15 +40,15 @@ rom1hex = bin_rows_to_hex(rom1bin)
 rom_size = 32 * 1024
 microsteps_per_instruction = 16
 
-flag_0_base = 0x0000 # flag bit = 0 address starts here
-flag_1_base = 0x1000 # flag bit = 1 address starts here
+flag_0_base = 0x0000  # flag bit = 0 address starts here
+flag_1_base = 0x1000  # flag bit = 1 address starts here
 
-noop_opcode = 0x00
+noopwopr_opcode = 0x23  # 0010 0011, skip dummy operand
 
 positive_jump_opcodes = range(0x10, 0x14)
 negative_jump_opcodes = range(0x14, 0x18)
 
-highest_needed_opcode = 0x17
+highest_needed_opcode = max(0x17, noopwopr_opcode)
 needed_words = (highest_needed_opcode + 1) * microsteps_per_instruction
 
 if len(rom1hex) < needed_words:
@@ -79,29 +79,29 @@ def make_full_rom_image(hex_data):
         for i, value in enumerate(hex_data):
             rom_image[base_address + i] = value
 
-    noop_words = get_instruction_words(hex_data, noop_opcode)
+    noopwopr_words = get_instruction_words(hex_data, noopwopr_opcode)
 
     # positive jumps:
     # JMPC, JMPZ, JMPN, JMPOVR
     #
-    # when selected flag is 0, skip them with NOOP
+    # when selected flag is 0, replace with NOOPWOPR
     # when selected flag is 1, keep the real jump
     for opcode in positive_jump_opcodes:
         real_jump_words = get_instruction_words(hex_data, opcode)
 
-        write_instruction_words(rom_image, flag_0_base, opcode, noop_words)
+        write_instruction_words(rom_image, flag_0_base, opcode, noopwopr_words)
         write_instruction_words(rom_image, flag_1_base, opcode, real_jump_words)
 
     # negative jumps:
     # JMPNC, JMPNZ, JMPNN, JMPNOVR
     #
     # when selected flag is 0, keep the real jump
-    # when selected flag is 1, skip them with NOOP
+    # when selected flag is 1, replace with NOOPWOPR
     for opcode in negative_jump_opcodes:
         real_jump_words = get_instruction_words(hex_data, opcode)
 
         write_instruction_words(rom_image, flag_0_base, opcode, real_jump_words)
-        write_instruction_words(rom_image, flag_1_base, opcode, noop_words)
+        write_instruction_words(rom_image, flag_1_base, opcode, noopwopr_words)
 
     return rom_image
 
