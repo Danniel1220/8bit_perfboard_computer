@@ -34,8 +34,8 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <lib desc="file#74LS173.circ" name="13"/>
-  <lib desc="file#74LS191.circ" name="14"/>
+  <lib desc="file#74LS191.circ" name="13"/>
+  <lib desc="file#74LS173.circ" name="14"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -161,8 +161,24 @@
     <comp lib="0" loc="(3730,2400)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="0" loc="(3770,4400)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="south"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="0" loc="(3780,2270)" name="Ground">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(3810,4180)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(3850,4180)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
     </comp>
     <comp lib="0" loc="(3980,3460)" name="Splitter">
       <a name="bit0" val="7"/>
@@ -418,6 +434,9 @@
       <a name="incoming" val="8"/>
     </comp>
     <comp lib="1" loc="(2150,4660)" name="NOT Gate"/>
+    <comp lib="1" loc="(3850,4180)" name="NOT Gate">
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="1" loc="(4020,2150)" name="NOT Gate"/>
     <comp lib="1" loc="(4020,2190)" name="NOT Gate"/>
     <comp lib="1" loc="(4140,1170)" name="NOT Gate">
@@ -442,13 +461,17 @@
     </comp>
     <comp lib="1" loc="(4940,3240)" name="NOT Gate"/>
     <comp lib="1" loc="(4980,2160)" name="NOT Gate"/>
-    <comp lib="13" loc="(3830,2370)" name="IC74LS173">
+    <comp lib="14" loc="(3830,2370)" name="IC74LS173">
       <a name="label" val="FLAGS_REGISTER"/>
     </comp>
     <comp lib="2" loc="(2400,2510)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="select" val="2"/>
       <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="2" loc="(3770,4350)" name="Decoder">
+      <a name="enable" val="false"/>
+      <a name="select" val="4"/>
     </comp>
     <comp lib="5" loc="(2170,4580)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
@@ -962,15 +985,21 @@ ae 12*9e 7*8e ae 8*9e
     <wire from="(3720,3580)" to="(4440,3580)"/>
     <wire from="(3730,2400)" to="(3730,2410)"/>
     <wire from="(3730,2410)" to="(3760,2410)"/>
+    <wire from="(3730,4420)" to="(3730,4440)"/>
     <wire from="(3740,2440)" to="(3740,2490)"/>
     <wire from="(3740,2440)" to="(3840,2440)"/>
+    <wire from="(3740,4420)" to="(3740,4440)"/>
+    <wire from="(3750,4420)" to="(3750,4440)"/>
     <wire from="(3760,2400)" to="(3760,2410)"/>
     <wire from="(3760,2410)" to="(3780,2410)"/>
+    <wire from="(3760,4420)" to="(3760,4440)"/>
+    <wire from="(3770,4350)" to="(3770,4400)"/>
     <wire from="(3780,2270)" to="(3780,2340)"/>
     <wire from="(3780,2400)" to="(3780,2410)"/>
     <wire from="(3800,1850)" to="(3800,2340)"/>
     <wire from="(3800,1850)" to="(5280,1850)"/>
     <wire from="(3800,2400)" to="(3800,2420)"/>
+    <wire from="(3810,4180)" to="(3820,4180)"/>
     <wire from="(3820,1890)" to="(3820,2340)"/>
     <wire from="(3820,1890)" to="(5300,1890)"/>
     <wire from="(3820,2400)" to="(3820,2430)"/>
@@ -1474,8 +1503,8 @@ ae 12*9e 7*8e ae 8*9e
       <a name="facing" val="east"/>
     </comp>
     <comp lib="0" loc="(880,490)" name="Ground"/>
-    <comp lib="13" loc="(760,430)" name="IC74LS173"/>
-    <comp lib="13" loc="(950,430)" name="IC74LS173"/>
+    <comp lib="14" loc="(760,430)" name="IC74LS173"/>
+    <comp lib="14" loc="(950,430)" name="IC74LS173"/>
     <comp lib="7" loc="(650,740)" name="74245">
       <a name="facing" val="north"/>
     </comp>
