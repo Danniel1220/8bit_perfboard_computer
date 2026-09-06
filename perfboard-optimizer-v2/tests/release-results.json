@@ -1,0 +1,20 @@
+{
+  "release": "2.0.0",
+  "unit_tests": {
+    "passed": 26
+  },
+  "smoke_checks": {
+    "two_worker_pause_save_resume_quit_and_corruption_recovery": "passed",
+    "full_queue_single_candidate_clean_exit": "passed",
+    "sigint_save_and_resume": "passed"
+  },
+  "fresh_seed": {
+    "disconnected": 170,
+    "hard_violations": 0,
+    "combinational_cases_passed": 524288,
+    "flag_state_cases_passed": 8192
+  },
+  "long_optimization_run": false,
+  "new_worker_benchmark": false,
+  "old_checkpoint_migration": false
+}

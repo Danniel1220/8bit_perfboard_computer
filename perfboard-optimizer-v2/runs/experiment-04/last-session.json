@@ -1,0 +1,1 @@
+{"schema_version":1,"session_id":"00364726f8fb","seconds":1611.6550392000936,"candidates":26465,"candidates_per_second":16.421007818853884,"route_attempts":222395,"workers":12,"peak_reported_worker_rss_bytes":803364864,"phase_seconds":{"placement":570.8044744918589,"logic":2179.7959579890594,"routing":13244.638543882407,"scoring_validation":2130.422311715549},"errors":[]}

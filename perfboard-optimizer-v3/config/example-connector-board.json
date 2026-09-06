@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "name": "Connector example",
+  "board": {
+    "width": 14,
+    "height": 10,
+    "pitch_mm": 2.54,
+    "svg_pitch": 7.2
+  },
+  "constants": {
+    "VCC": 1,
+    "GND": 0
+  },
+  "packages": {
+    "J": {
+      "kind": "connector",
+      "count": 2
+    }
+  },
+  "components": [
+    {
+      "id": "IN",
+      "package": "J",
+      "function": "connector",
+      "initial": {
+        "x": 1,
+        "y": 2,
+        "rotation": 0,
+        "edge": "left"
+      },
+      "pin_nets": {
+        "1": "A",
+        "2": "B"
+      },
+      "fixed": false,
+      "rotations": [
+        0
+      ],
+      "edges": [
+        "left"
+      ],
+      "reorder_pins": true,
+      "group": "io"
+    },
+    {
+      "id": "OUT",
+      "package": "J",
+      "function": "connector",
+      "initial": {
+        "x": 12,
+        "y": 2,
+        "rotation": 0,
+        "edge": "right"
+      },
+      "pin_nets": {
+        "1": "A",
+        "2": "B"
+      },
+      "fixed": false,
+      "rotations": [
+        0
+      ],
+      "edges": [
+        "right"
+      ],
+      "reorder_pins": true,
+      "group": "io"
+    }
+  ],
+  "groups": {
+    "io": {
+      "members": [
+        "IN",
+        "OUT"
+      ]
+    }
+  },
+  "symmetry_pairs": [],
+  "flow_edges": [],
+  "corridors": [],
+  "keepouts": [],
+  "constraints": {
+    "active_escape_cells": 2,
+    "fixed_tie_no_turn_cells": 1,
+    "crossings": "orthogonal_straight_only",
+    "capacitors": {
+      "horizontal": "right_adjacent",
+      "vertical": "bottom_adjacent",
+      "asset": "assets/cap.svg"
+    },
+    "connector_inset": 1
+  },
+  "weights": {
+    "group_spread": 1.0,
+    "foreign_group_wire": 0.7,
+    "internal_wire_escape": 0.5,
+    "connector_distance": 0.3,
+    "flow": 0.5,
+    "symmetry": 0.8,
+    "wire_length": 0.08,
+    "bends": 0.6,
+    "congestion": 0.1
+  },
+  "search": {
+    "candidate_seconds": 1.5,
+    "max_astar_nodes": 22000,
+    "max_route_attempts": 12,
+    "plateau_candidates": 180,
+    "plateau_seconds": 120,
+    "worker_state_seconds": 30,
+    "adopt_seconds": 45,
+    "summary_seconds": 600,
+    "checkpoint_retention": 40,
+    "mutation_weights": {
+      "route": 0.34,
+      "move": 0.18,
+      "rotate": 0.07,
+      "connector_move": 0.07,
+      "connector_order": 0.06,
+      "gate_channels": 0.08,
+      "mux_channels": 0.08,
+      "input_swap": 0.08,
+      "group_move": 0.04
+    }
+  },
+  "validation": {
+    "kind": "equivalence_only"
+  },
+  "colors": {
+    "A": "#00a097",
+    "B": "#2e3192",
+    "BX": "#f59f00",
+    "SUM": "#e7b800",
+    "XOR": "#f59f00",
+    "AND": "#e7b800",
+    "OR": "#a7a7a7",
+    "AR": "#f59f00",
+    "LOG": "#a7a7a7",
+    "R": "#e7b800",
+    "BUS": "#e7b800",
+    "SUB": "#7b58ad",
+    "OP0": "#7b58ad",
+    "OP1": "#7b58ad",
+    "OE_N": "#7b58ad",
+    "C": "#be1e2d",
+    "Z": "#be1e2d",
+    "N": "#be1e2d",
+    "V": "#be1e2d"
+  },
+  "seed": "config/example-connector-seed.json"
+}

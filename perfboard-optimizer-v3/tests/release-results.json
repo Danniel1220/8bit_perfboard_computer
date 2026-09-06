@@ -1,0 +1,16 @@
+{
+  "release": "3.0.0",
+  "unit_tests_passed": 32,
+  "additional_router_preference_test_passed": true,
+  "exploration_save_resume_smoke": "passed (4 candidates)",
+  "integration_smoke": "passed",
+  "functional": {
+    "passed": true,
+    "method": "canonical equivalence + exhaustive ALU and flags",
+    "combinational_cases": 524288,
+    "sequential_cases": 8192
+  },
+  "initial_disconnected": 170,
+  "hard_violations": 0,
+  "long_search": false
+}

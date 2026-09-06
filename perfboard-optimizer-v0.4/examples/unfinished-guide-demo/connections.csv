@@ -1,0 +1,5 @@
+Net,Component,Physical_pin,Column_zero_based,Row_zero_based,Connection_side
+A,IN,1,1,2,top
+B,IN,2,1,3,top
+A,OUT,1,12,2,top
+B,OUT,2,12,3,top
