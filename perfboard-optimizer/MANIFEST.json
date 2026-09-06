@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "checkpoint_sha256": "8161a99aaa28b35bc0f408c4aea78f65325399ad55fb4ded5f7ab5a499b6d691",
+  "files": {
+    "assets/ADD.svg": {
+      "bytes": 10362,
+      "sha256": "8bf4e8978ded0ab9109336d9c45201a9718fcec3a4a57226cb1bd04ee9597a6e"
+    },
+    "assets/AND.svg": {
+      "bytes": 8944,
+      "sha256": "d8d2c0a4b39fbc93719081fd5e126e4fad136d94ca3cf081b9ccb05638bdd225"
+    },
+    "assets/BUF.svg": {
+      "bytes": 4933,
+      "sha256": "6e1b4ab9ee1c1f52a91ec920b0d9d111f8fbf41dd4d346aff475a0d219501c01"
+    },
+    "assets/cap.svg": {
+      "bytes": 669,
+      "sha256": "ebf59879f7af71453e6a5213cdd90a6e2abb83f2c444de586c50d23fecee2169"
+    },
+    "assets/CMP.svg": {
+      "bytes": 4931,
+      "sha256": "5bef6ef348ba863ef8f1a6598ec74f052a8fb1332f61c0d2d54251fc0ab43152"
+    },
+    "assets/JST6.svg": {
+      "bytes": 2379,
+      "sha256": "6767541268fe7e33f3ce201a30ca3112c8fc2e51c742c14120ff3ee601172bc2"
+    },
+    "assets/JST8.svg": {
+      "bytes": 2625,
+      "sha256": "fd3eecfbd5b783448b62d42c9d1fd9231a76f26b1e9d8dc23b39debfda53e1af"
+    },
+    "assets/LUT.svg": {
+      "bytes": 4053,
+      "sha256": "859fb1835f443bf3e940eac8ea42a5f59785eafa2e3a15d9235df2c3e139faad"
+    },
+    "assets/MUX.svg": {
+      "bytes": 11394,
+      "sha256": "0055dcde24569c555168203d28596155360fbdf8a4cafe808b471094cff8accd"
+    },
+    "assets/OR.svg": {
+      "bytes": 8859,
+      "sha256": "f7dbe01d9742138c264bc960fe2113a5a8bdbb8047e9cf15f8aff3fc6496864e"
+    },
+    "assets/REG.svg": {
+      "bytes": 4062,
+      "sha256": "1368c61dee15500da9911084f04928e8e4bc72f0b64fc5dfbb7aa9c1d8080dd3"
+    },
+    "assets/SEL.svg": {
+      "bytes": 4066,
+      "sha256": "ee19b0470100a521b4f0a97a8cd46f96dbf509971bdb1f2d6ef48406a65b73ef"
+    },
+    "assets/XOR.svg": {
+      "bytes": 8881,
+      "sha256": "5d2690a45fc6671d7256f35d06fc4be342d111981bdb591ba05552f61f0d911c"
+    },
+    "benchmarks/recommendation.json": {
+      "bytes": 1808,
+      "sha256": "e7d9311ae1c349b93e9e028d87669454661531b2325fcda204dd419c83925001"
+    },
+    "config/alu-seed.json": {
+      "bytes": 70954,
+      "sha256": "9e201bf2853fc18e6b37a0c5a029f16f676b6cff60c8454944eec2e9f0b2b1d7"
+    },
+    "config/alu.json": {
+      "bytes": 63325,
+      "sha256": "43ea65147b76513c50b0264162c91e6f5888ae156992eb2080e3ecc737188f2f"
+    },
+    "config/example-connector-board.json": {
+      "bytes": 3048,
+      "sha256": "032f4bab0a835e4dc74134566af2a748b50b00581eaa7391571176db5f8811a6"
+    },
+    "config/example-connector-seed.json": {
+      "bytes": 498,
+      "sha256": "82da32f65ae806d8ffed892fd51e28515362f1d6dd688f2bc7c21ba9ecd68368"
+    },
+    "CONFIGURATION.md": {
+      "bytes": 11629,
+      "sha256": "238909b937a6e8b68e2c0261b26d145d8c24123ebe1a1167f1f763664d4094ec"
+    },
+    "optimize_alu.py": {
+      "bytes": 7860,
+      "sha256": "e18e91173af27c923e5ae3be1b9f61b4d818090b361d7c332a5515d88fd2608d"
+    },
+    "perfopt/__init__.py": {
+      "bytes": 98,
+      "sha256": "b99b0074b45d9ed543076d80e1dccb485def3780d487d5db215cd9d53a9c4739"
+    },
+    "perfopt/coordinator.py": {
+      "bytes": 18459,
+      "sha256": "c198062dfb3f066fcd2c55dd470ecb1ab0dc8778455c762e8ac4f28bcd425e3f"
+    },
+    "perfopt/dashboard.py": {
+      "bytes": 4182,
+      "sha256": "a9d5b91d6e70af6c1ffe8b2d24be8844af8d7c3db2acd7201c5e2b8cb0475da1"
+    },
+    "perfopt/diagnostics.py": {
+      "bytes": 1853,
+      "sha256": "66b75b9bf025ad4338d88f66dbb8ebbb84d9089dee6a847e80168e5199c70c56"
+    },
+    "perfopt/export.py": {
+      "bytes": 6225,
+      "sha256": "79dacd2b182daa860f31cd7d34688527f0788b5f9cb80e53505bc1de283407a2"
+    },
+    "perfopt/logic.py": {
+      "bytes": 8439,
+      "sha256": "cf3bb1ef1f3e298122010a4f6a88a328f4d49acfe74483c30a1bfd5d8b15ade6"
+    },
+    "perfopt/model.py": {
+      "bytes": 10775,
+      "sha256": "8b5a7146522b5bcbc515a7e006aafac2a3b00b4842c14f93ce322f7a0e2d68f9"
+    },
+    "perfopt/router.py": {
+      "bytes": 11551,
+      "sha256": "e86a4da64df138951024d0ca216aad73f3f758079b74b21812041b01a5cf6b88"
+    },
+    "perfopt/search.py": {
+      "bytes": 10069,
+      "sha256": "dc7f1e5c3d612d6cb9fe886f44d200338e41b7c9a823f16b0e6df4e348a9fb1b"
+    },
+    "perfopt/storage.py": {
+      "bytes": 4412,
+      "sha256": "9a32504d1863d37caed4911ddd71def5f9020ac7a99f9581c7595161af063ff2"
+    },
+    "perfopt/worker.py": {
+      "bytes": 10638,
+      "sha256": "d6d461f86fe7c83cdf213c96bb90314348c1566bd6c7574d0dd1a35fdd33d353"
+    },
+    "README.md": {
+      "bytes": 18107,
+      "sha256": "17d1cf9968a0c715d2c3d7cbd372ef257f255ce713bdffebad1e378e566e4987"
+    },
+    "requirements.txt": {
+      "bytes": 45,
+      "sha256": "908324a2e785eac99d528c7e4675f0b738edd3dc6e87b0ecc77814c779bb36b0"
+    },
+    "runs/alu/checkpoints/best.json": {
+      "bytes": 66483,
+      "sha256": "8161a99aaa28b35bc0f408c4aea78f65325399ad55fb4ded5f7ab5a499b6d691"
+    },
+    "runs/alu/checkpoints/best_00000001_import.json": {
+      "bytes": 66483,
+      "sha256": "8161a99aaa28b35bc0f408c4aea78f65325399ad55fb4ded5f7ab5a499b6d691"
+    },
+    "runs/alu/config-used.json": {
+      "bytes": 22211,
+      "sha256": "0c5e57d145ab843d68d5cd35296260aa57aac23b683d0dd944ca2d8ac8e0d5e3"
+    },
+    "runs/alu/exports/best.json": {
+      "bytes": 58184,
+      "sha256": "4417564fb64b1c2c9550f20573f2b21b9ea278e8eae06e82d81a9c4064c033ff"
+    },
+    "runs/alu/exports/best.svg": {
+      "bytes": 932246,
+      "sha256": "73489bd7ebb18a8c366afcabeb1799da6417b737214c3d2942c29a0d61fd82dc"
+    },
+    "runs/alu/exports/connections.csv": {
+      "bytes": 9536,
+      "sha256": "37542bc177806dd3a0b6f0f27ccc0e2c88962076d33b5fe3d8129d284a2451a4"
+    },
+    "runs/alu/exports/export-complete.json": {
+      "bytes": 60,
+      "sha256": "6f1e8f1e43c2573208486fce45cbcb86b4608735f0a5462c797b61eaaef09cca"
+    },
+    "runs/alu/exports/validation.json": {
+      "bytes": 796,
+      "sha256": "7f8cec26bcaaef25c4287ff93251fb5e5066d6803e37bdd0546ea29969d9f10e"
+    },
+    "runs/alu/reports/delivery-validation.json": {
+      "bytes": 796,
+      "sha256": "7f8cec26bcaaef25c4287ff93251fb5e5066d6803e37bdd0546ea29969d9f10e"
+    },
+    "runs/alu/reports/validation-1788640551513825900.json": {
+      "bytes": 952,
+      "sha256": "9eef8831ffc01a62fbfc358e8318063891ba745179d0a3c0b458ca3e71f38ef9"
+    },
+    "TESTING.md": {
+      "bytes": 5063,
+      "sha256": "f630b4e2b6fd695b529fc456599bbf1f6f3b3d2812404479a18db81f893e6eb0"
+    },
+    "tests/integration_smoke.py": {
+      "bytes": 4005,
+      "sha256": "069945883ce3b8c91e239a709b7d23e36931e2dca76e56a7ef56d149644629aa"
+    },
+    "tests/interrupt_smoke.py": {
+      "bytes": 1079,
+      "sha256": "d1b9f4e6739340d727250b9e7f063548206dc641ee23b0fcb86949f1d1f80d54"
+    },
+    "tests/test_optimizer.py": {
+      "bytes": 7765,
+      "sha256": "446148f1653bb25491cf1ca3520b0f4ebdd9a06dcabb4f2fc3abb4b9dcdf6079"
+    }
+  }
+}
